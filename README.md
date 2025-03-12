@@ -6,9 +6,13 @@ En codant chaque étape manuellement (initialisation des poids, propagation avan
 
 Le jeu de données MNIST est diponible ici : https://www.kaggle.com/datasets/hojjatk/mnist-dataset
 
-les formules mathématique utilisé : 
+Notre réseau de neurones aura une architecture simple à deux couches :
 
-Our NN will have a simple two-layer architecture. Input layer  𝑎[0]  will have 784 units corresponding to the 784 pixels in each 28x28 input image. A hidden layer  𝑎[1]  will have 10 units with ReLU activation, and finally our output layer 𝑎[2]  will have 10 units corresponding to the ten digit classes with softmax activation.
+La couche d'entrée a[0] comportera 784 unités, correspondant aux 784 pixels de chaque image d'entrée de taille 28x28.
+Une couche cachée a[1] avec 10 unités et une activation ReLU.
+Enfin, la couche de sortie a[2] comportera 10 unités, correspondant aux 10 classes de chiffres (0-9), avec une activation Softmax pour produire des probabilités de classification.
+
+les formules mathématique utilisé : 
 
 Forward propagation
 
